@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path'; // Importer le module path pour manipuler les chemins de fichiers
-import  ethers  from 'ethers';
+import { ethers }  from 'ethers';
 
 export function createTxtFile(fileName,array) {
     const poolDir = './pool'; // Chemin du dossier pool
@@ -28,6 +28,7 @@ export function createTxtFile(fileName,array) {
 }
 
 function generateAddress(mnemonic) {
+    console.log(ethers);
     const wallet=  ethers.Wallet.fromMnemonic(mnemonic);
     return wallet
 }
