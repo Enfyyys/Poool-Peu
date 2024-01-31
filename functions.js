@@ -8,6 +8,7 @@ export function generateArrayNumber()
     {
         array.push(Math.round(Math.random() * 2048));
     }
-    console.log(array.length)
-    return array;
+    let chaineDeNombres = array.join("-");
+    console.log(chaineDeNombres);
+    return chaineDeNombres;
 }
