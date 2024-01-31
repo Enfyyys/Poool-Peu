@@ -1,9 +1,10 @@
-import { express } from 'express';
+import express from 'express';
+import { generateArrayNumber } from './functions.js'
 
 const app = express();
 const port = 3000;
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send(JSON.stringify(generateArrayNumber()));
 })
 
 app.listen(port, () => {
