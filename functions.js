@@ -1,3 +1,5 @@
+
+
 export function generateArrayNumber()
 {
     let number = [12, 15, 18, 21, 24];
@@ -10,5 +12,9 @@ export function generateArrayNumber()
     }
     let chaineDeNombres = array.join("-");
     console.log(chaineDeNombres);
-    return chaineDeNombres;
+    return {chaineDeNombres,array};
 }
+
+
+
+
